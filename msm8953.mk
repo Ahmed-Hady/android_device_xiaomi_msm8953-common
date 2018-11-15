@@ -206,6 +206,20 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# AB OTA UPDATER
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_PACKAGES += \
+    bootctrl.default \
+    bootctl
+
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_client \
+    update_verifier \
+    delta_generator \
+    brillo_update_payload
+endif
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5435_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5435_ts.kl \
@@ -385,3 +399,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
