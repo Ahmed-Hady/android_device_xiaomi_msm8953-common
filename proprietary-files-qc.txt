@@ -90,6 +90,9 @@ vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
+etc/firmware/goodix_firmware.bin
+etc/firmware/ice40.bin
+etc/firmware/wlan/prima/WCNSS_cfg.dat
 
 # CNE
 etc/cne/andsfCne.xml
