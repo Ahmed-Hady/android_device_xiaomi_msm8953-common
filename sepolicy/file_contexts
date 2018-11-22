@@ -14,9 +14,6 @@
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
-# Audio
-/data/vendor/audio(/.*)?         u:object_r:vendor_audio_data_file:s0
-
 # Connectivity
 /data/connectivity(/.*)?              u:object_r:cnd_data_file:s0
 
